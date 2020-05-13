@@ -1,0 +1,26 @@
+SmalltalkCISpec {
+  #name : 'Spesenfuchs Tests',
+  #loading : [
+    SCIMetacelloLoadSpec {
+  	#baseline : 'RKA24',
+ 	#directory : 'packages',
+ 	#ignoreImage : true,
+ 	#onConflict : #useIncoming,
+	#onUpgrade : #useIncoming,
+ 	#onWarningLog : true,
+ 	#platforms : [ #pharo],
+ 	#useLatestMetacello : false
+}
+  ],
+  #testing : {
+    #coverage : {
+      #packages : [ ' RKA24-Model' ]
+    },
+    #classes : [ #RKANumberConversionTest, #RKAChartTest, #RKAReceiptTest, #RKAEvaluationsTest, #RKAS3SignedUrlTest, #RKAS3UploadTest, #RKATripTest, #RKAParasolDashboardTest ],
+    #defaultTimeout : 30, 
+    #failOnSCIDeprecationWarnings : false,
+    #failOnZeroTests : false, 
+    #hidePassingTests : false, 
+    #serializeError: true
+  }
+}
