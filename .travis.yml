@@ -8,29 +8,19 @@ os:
 
 # Select compatible Smalltalk image(s)
 smalltalk:
-  - Squeak64-trunk
-  - Squeak64-5.1
-  - Squeak32-4.6
-  - Squeak32-4.5
   # ...
   - Pharo64-alpha
   - Pharo64-stable
   - Pharo64-7.0
   - Pharo64-6.1
   # ...
-  - Pharo32-alpha
-  - Pharo32-stable
-  - Pharo32-6.1
-  # ...
-  - GemStone64-3.3.2
-  - GemStone64-3.2.12
-  - GemStone64-3.1.0.6
-  # ...
+ 
+
 
 # Override `script` to customize smalltalkCI invocation, e.g.:
-#script:
-#  - smalltalkci .mysmalltalk1.ston
-#  - travis_wait smalltalkci .mysmalltalk2.ston
+script:
+  - smalltalkci .smalltalk.ston
+  - travis_wait smalltalkci .smalltalk.ston
 
 # Uncomment to enable caching (only useful for GemStone builds (3x faster))
 #cache:
